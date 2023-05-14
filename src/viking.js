@@ -31,6 +31,12 @@ class Viking extends Soldier {
             return `${this.name} has received ${damage} points of damage`
         else
             return `${this.name} has died in act of combat`
+
+        // nice syntax with ternary operator by pmiossec:
+        // return this.health > 0
+        // ? `${this.name} has received ${damage} points of damage`
+        // : `${this.name} has died in act of combat`;
+
     }
     battleCry() {
         return "Odin Owns You All!"
@@ -76,7 +82,7 @@ class War {
     addSaxon(saxon) {
         this.saxonArmy.push(saxon)
     }
-    
+
     // >>>
     // there is no equivalent to VBA With block statements in JS
     // 4 alternatives:
